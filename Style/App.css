@@ -1,57 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body{
+    background-color: #9CA3AF;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin:20px 10px;
+}
+
 .parent{
     display: grid;
     grid-template-columns:  1fr 1fr 1fr;
     grid-template-rows: 70px 150px 300px 70px;
+    grid-row-gap: 10px;
+    grid-column-gap:10px;
+    width: 100%;
+    max-width: 1200px;
 }
 
 .h-box{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(12, 39, 160);
+    background-color: #A5B4FC ;
     grid-column: 1/4;
-    
+    border-radius: 15px 15px 0 0;
 }
 
 .n-box {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: brown;
+    background-color: #2CCED2;
     grid-column: 1/2 ;
     grid-row: 2/3 ;
+    border-radius: 8px;
 }
 
 .a-box {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: green;
+    background-color: #DC828F;
     grid-row: 3/4;
     grid-column: 1/2;
+    border-radius: 8px;
+
 }
 
 .m-box{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: purple;
+    background-color: #FDE68A;
     grid-column: 2/4;
     grid-row: 2/4;
     grid-column-gap: 10rem;
+    border-radius: 8px;
 }
 
 .f-box {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: slategrey;
+    background-color: #6EE7B7;
     grid-column: 1/4;
     grid-row: 4/5;
+    border-radius: 0 0 15px 15px;
+}
+
+p{
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+    font-size: 30px;
 }
