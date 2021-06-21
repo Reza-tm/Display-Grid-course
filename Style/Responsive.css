@@ -1,0 +1,53 @@
+@media all and (max-width:768px){
+    .parent{
+        grid-template-columns: 1fr ;
+        grid-template-rows: 70px 150px 150px 500px 70px;
+        grid-row-gap: 10px;
+        grid-column-gap:10px;
+        width: 100%;
+        max-width: 1200px;
+        grid-template-areas: 
+        "h-box"
+        "n-box"
+        "a-box"
+        "m-box"
+        "f-box"
+        ;
+    }
+}
+
+
+@media all and (min-width:768px){
+    .parent{
+        grid-template-columns:  1fr 1fr ;
+        grid-template-rows: 70px 150px 500px 70px;
+        grid-row-gap: 10px;
+        grid-column-gap:10px;
+        width: 100%;
+        max-width: 1200px;
+        grid-template-areas: 
+        "h-box h-box"
+        "n-box a-box"
+        "m-box m-box"
+        "f-box f-box"
+        ;
+    }
+}
+
+
+@media all and (min-width:992px){
+    .parent{
+        display: grid;
+        grid-template-columns:  1fr 1fr 1fr;
+        grid-template-rows: 70px 150px 300px 70px;
+        grid-row-gap: 10px;
+        grid-column-gap:10px;
+        width: 100%;
+        max-width: 1200px;
+        grid-template-areas: 
+        "h-box h-box h-box"
+        "n-box m-box m-box"
+        "a-box m-box m-box"
+        "f-box f-box f-box";
+    }
+}

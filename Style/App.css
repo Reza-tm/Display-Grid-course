@@ -65,7 +65,6 @@ body{
     justify-content: center;
     align-items: center;
     background-color: #FDE68A;
-    grid-column-gap: 10rem;
     border-radius: 8px;
     grid-area: m-box ;
 }
